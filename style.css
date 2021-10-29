@@ -11,6 +11,7 @@ body {
 .container {
   margin: 0 auto;
   width: 80%;
+  max-width: 1200px;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
 /*****************
@@ -76,3 +77,85 @@ nav li a:hover {
 /*****************
     MAIN
 *****************/
+
+main {
+  margin: 35px 0 15px 0;
+  color: #858585;
+}
+
+#leadership h2 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #000;
+}
+
+.content {
+  margin: 35px 0;
+}
+
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  float: left;
+}
+
+.col-1,
+.col-3 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 56%;
+  margin: 0 2%;
+}
+
+.image {
+  height: 200px;
+  width: 100%;
+  filter: brightness(80%);
+  border-radius: 10px;
+}
+
+.img-1 {
+  background: url("img/img-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-2 {
+  background: url("img/banner-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-3 {
+  background: url("img/img-3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-text h4 {
+  color: #000;
+  font-weight: normal;
+  margin: 20px 0 10px 0;
+}
+
+/*****************
+    FOOTER
+*****************/
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer span {
+  color: red;
+  font-size: 20px;
+}
